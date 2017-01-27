@@ -27,7 +27,8 @@ module "example" {
    command = "echo 'Hello World 222'"
 }
 
-
+syntax error !!!
+   
 variable aws_access_key  {
   type = "string"
 }
