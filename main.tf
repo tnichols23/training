@@ -42,7 +42,7 @@ variable aws_region {
 }
 
 variable "num_vars" {
-   default = "1" // comment
+   default = "2" // comment
 }
 
 
@@ -63,7 +63,7 @@ resource "aws_instance" "web" {
   vpc_security_group_ids = ["sg-29ef374e"]
 
   tags {
-    Identity       = "my instance"
+    Identity       = "autodesk-bulldog"
     "Name"         = "capacity_app3"
     "adsk:family"  = "Capacity"
     "adsk:product" = "Capacity"
