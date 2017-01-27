@@ -1,0 +1,13 @@
+provider "dnsimple" {
+   email = "xxxxxxx"
+   token = "yyyyyyyyyyy"
+}
+
+resource "aws_route53_record" "www" {
+   domain="terraform.rocks
+   name = "www.example.com"
+   type = "A"
+   ttl = "300"
+   records = ["${element(aws_instance.web.*.public_ip)}"]
+}
+
