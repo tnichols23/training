@@ -42,7 +42,7 @@ variable aws_region {
 }
 
 variable "num_vars" {
-   default = "2"
+   default = "1"
 }
 
 
