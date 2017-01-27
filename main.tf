@@ -42,7 +42,7 @@ variable aws_region {
 }
 
 variable "num_vars" {
-   default = "3" // comment
+   default = "3"
 }
 
 
@@ -50,9 +50,6 @@ provider "aws" {
   access_key = "${var.aws_access_key}"
   secret_key = "${var.aws_secret_key}"
   region = "${var.aws_region}"
-#  access_key = "AKIAIXEQSINCE53KLOGQ"
-#  secret_key = "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"
-#  region     = "us-west-1"
 }
 
 resource "aws_instance" "web" {
